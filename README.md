@@ -2,7 +2,7 @@
 This library for working with InfoBip SMS API. The Library is developing 
 from Serge NTONG (sergentong@gmail.com).
 
-We have been tested with InfoBip version 3.
+We have been tested with InfoBip API version 3.
 
 ##Documentation
 
