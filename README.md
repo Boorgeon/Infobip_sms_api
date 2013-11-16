@@ -6,8 +6,6 @@ We have been tested with InfoBip version 3.
 
 ##Documentation
 
-For get documentation about this library please go to http://doc.boorgeon.com/api/sms/infobip
-
 And to know more about InfoBip SMS API Manual you can go to site : http://www.infobip.com/messaging/connectivity/apis/
 
 ##Requirement
