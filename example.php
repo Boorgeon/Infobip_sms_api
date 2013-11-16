@@ -16,10 +16,10 @@ $infobip->setUsername('username');
 $infobip->setPassword('password');
 
 // OR
-//$infobip = new Infobip_sms_api(array(
-//    Infobip_sms_api::USERNAME => 'username',
-//    Infobip_sms_api::PASSWORD => 'password'
-// ));
+$infobip = new Infobip_sms_api(array(
+    Infobip_sms_api::USERNAME => 'username',
+    Infobip_sms_api::PASSWORD => 'password'
+ ));
 
 // Get balance -------------------------------------------------
 $balance = $infobip->getBalance();
