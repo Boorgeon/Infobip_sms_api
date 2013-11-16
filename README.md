@@ -1,4 +1,4 @@
-#InfoBip SMS API
+#InfoBip SMS PHP API
 This library for working with InfoBip SMS API. The Library is developing 
 from Serge NTONG (sergentong@gmail.com).
 
