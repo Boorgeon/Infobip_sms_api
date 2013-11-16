@@ -11,9 +11,9 @@ For get documentation about this library please go to http://doc.boorgeon.com/ap
 And to know more about InfoBip SMS API Manual you can go to site : http://www.infobip.com/messaging/connectivity/apis/
 
 ##Requirement
-This spark library need minimum requirement for doing well on run.
+This library need minimum requirement for doing well on run.
     
-    * Zend Framework    : version 1.12.1 <http://framework.zend.com/manual/1.12/fr/manual.html>
+    * Zend Framework    : version 1.12.1 http://framework.zend.com/manual/1.12/fr/manual.html
     * PHP               : version 5.2.x and above
 	
 ##Download
@@ -34,4 +34,3 @@ This spark library need minimum requirement for doing well on run.
 Please send us email when you got bugs or some idea for this library
     * sergentong@gmail.com
     * boorgeon@gmail.com
-
