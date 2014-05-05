@@ -10,11 +10,15 @@ set_include_path(implode(PATH_SEPARATOR, array(
 
 require_once 'Infobip_sms_api.php';
 
+$infobip = new Infobip_sms_api();
+$infobip->setUsername('username');
+$infobip->setPassword('password');
+
 // Send scheduled SMS --------------------------------------------------------
 
-$infobip->setMethod(Boorgeon_Service_Sms_Infobip::OUTPUT_XML); // With xml method
-$infobip->setMethod(Boorgeon_Service_Sms_Infobip::OUTPUT_JSON); // OR With json method
-$infobip->setMethod(Boorgeon_Service_Sms_Infobip::OUTPUT_PLAIN); // OR With plain method
+$infobip->setMethod(Infobip_sms_api::OUTPUT_XML); // With xml method
+$infobip->setMethod(Infobip_sms_api::OUTPUT_JSON); // OR With json method
+$infobip->setMethod(Infobip_sms_api::OUTPUT_PLAIN); // OR With plain method
 
 $message = new Infobip_sms_message();
 
