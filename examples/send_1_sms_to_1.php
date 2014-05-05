@@ -11,6 +11,10 @@ set_include_path(implode(PATH_SEPARATOR, array(
 
 require_once 'Infobip_sms_api.php';
 
+$infobip = new Infobip_sms_api();
+$infobip->setUsername('username');
+$infobip->setPassword('password');
+
 // Send 1 SMS to 1 --------------------------------------------------------
 
 $infobip->setMethod(Infobip_sms_api::OUTPUT_XML); // With xml method
