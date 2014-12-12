@@ -6,7 +6,7 @@ We have been tested with InfoBip API version 3.
 
 ##Documentation
 
-And to know more about InfoBip SMS API Manual you can go to site : http://www.infobip.com/messaging/connectivity/apis/
+And to know more about InfoBip SMS API Manual you can go to site : http://www.infobip.com/themes/site_themes/infobip/documentation/Infobip_HTTP_API_and_SMPP_specification.pdf
 
 ##Requirement
 This library need minimum requirement for doing well on run.
