@@ -16,7 +16,7 @@ This library need minimum requirement for doing well on run.
 	
 ##Download
 
-   https://github.com/Boorgeon/Infobip_sms_api
+   https://github.com/Boorgeon/Infobip_sms_api/archive/master.zip
 
 ##Synopsis
 
