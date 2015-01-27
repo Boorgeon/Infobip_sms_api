@@ -1,11 +1,4 @@
 <?php
-
-// Add zend library
-set_include_path(implode(PATH_SEPARATOR, array(
-    realpath('/path/to/zend/library'),
-    get_include_path()
-)));
-
 // Begin script
 
 require_once 'Infobip_sms_api.php';

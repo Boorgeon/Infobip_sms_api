@@ -11,7 +11,6 @@ And to know more about InfoBip SMS API Manual you can go to site : http://www.in
 ##Requirement
 This library need minimum requirement for doing well on run.
     
-    * Zend Framework    : version 1.12.1 http://framework.zend.com/manual/1.12/fr/manual.html
     * PHP               : version 5.2.x and above
 	
 ##Download

@@ -34,6 +34,12 @@
  * @category	Libraries
  * @version   1.0
  */
+
+set_include_path(implode(PATH_SEPARATOR, array(
+    realpath(dirname(__FILE__)) . '/lib',
+    get_include_path()
+)));
+
 /**
  * Zend_Http_Client
  */
@@ -45,10 +51,10 @@ require_once 'Zend/Http/Client.php';
 require_once 'Infobip_sms_message.php';
 
 class Infobip_sms_api {
+
     /**
      * HTTP method responses.
      */
-
     const ALL_RECIPIENTS_PROCESSED = 0;
     const SEND_ERROR = -1;
     const NOT_ENOUGH_CREDITS = -2;
@@ -145,7 +151,6 @@ class Infobip_sms_api {
     const GSM_SEPARATOR = ',';
     const MESSAGE_ID_SEPARATOR = ',';
     const DESTINATIONS_SEPARATOR = ';';
-
 
     /**
      * Status value.
@@ -715,7 +720,8 @@ class Infobip_sms_api {
         $plain[self::USER] = $this->getUsername();
         $plain[self::PASSWORD] = $this->getPassword();
 
-        $message = $this->getMessages()[0];
+        $messagess = $this->getMessages();
+        $message = $messagess[0];
 
         $plain[self::SENDER] = $message->getSender();
         $plain[self::SMSTEXT] = $message->getText();
@@ -813,6 +819,11 @@ class Infobip_sms_api {
 
         if ($method == self::OUTPUT_JSON) {
             $json = json_decode($body);
+
+            if (!$json) {
+                return $parsedBody;
+            }
+
             $parsedBody = $json->results;
         } else {
             $this->_error = null;
